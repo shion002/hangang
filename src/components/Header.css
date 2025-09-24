@@ -10,6 +10,10 @@
   font-family: "lineseed";
   src: url("./../assets/LINESeedKR-Rg.woff2");
 }
+@font-face {
+  font-family: "aa";
+  src: url("./../assets//LINESeedKR-Th.woff2;charset=utf-8;base64");
+}
 
 .Header {
   background-size: auto;
@@ -25,6 +29,7 @@
   background-position: center;
   align-items: center;
   padding: 20px 0;
+  font-family: "aa";
 }
 
 .header-nav {
