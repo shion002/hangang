@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+
+.inquiry-wrap {
+  max-width: 1000px;
+  margin: auto;
+  padding: 120px 40px;
+  font-family: "lineseed";
+}
+
+.inquiry-content > div input {
+  padding: 15px 10px;
+  display: block;
+  border: 1px solid rgb(182, 182, 182);
+  color: rgb(95, 95, 95);
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.inquiry-content-contact {
+  display: flex;
+  gap: 50px;
+}
+.inquiry-content-main {
+  margin: 30px auto;
+}
+
+.inquiry-content-main > textarea {
+  width: 100%;
+  height: 350px;
+  overflow: auto;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  resize: none;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.inquiry-content-title-first {
+  padding: 40px 0;
+}
+
+.inquiry-content-button {
+  text-align: center;
+  margin: 40px 0;
+}
+.inquiry-content-button > button {
+  border: none;
+  padding: 20px 60px;
+  background-color: rgb(96, 96, 211);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inquiry-content-button > button:hover {
+  background-color: rgb(106, 106, 255);
+}
+
+@media (max-width: 990px) {
+  .inquiry-content-title-first {
+    font-size: 24px;
+  }
+  .inquiry-content > div input {
+    padding: 14px 10px;
+  }
+  .inquiry-content-contact {
+    display: block;
+    gap: 0px;
+  }
+}

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+
+.Footer {
+  background-color: #222222;
+  padding: 30px 35px;
+  font-family: "lineseed";
+}
+.footer-wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-top > p {
+  cursor: pointer;
+}
+.footer-vline {
+  width: 1px;
+  height: 15px;
+  background-color: white;
+}
+
+.footer-logo {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.footer-info-top {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info-mid {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info-mid > p {
+  margin: 0px;
+}
+
+.footer-info-bottom {
+  margin-top: 35px;
+  color: #888;
+}
+
+@media (max-width: 990px) {
+  .footer-top {
+    font-size: 14px;
+  }
+  .footer-logo {
+    width: 160px;
+  }
+  .footer-info-top {
+    display: block;
+    font-size: 12px;
+  }
+
+  .footer-info-top > p {
+    margin: 6px 0;
+  }
+
+  .footer-vline {
+    display: none;
+  }
+
+  .footer-info-mid {
+    display: block;
+    font-size: 12px;
+  }
+
+  .footer-info-mid > p {
+    margin: 6px 0;
+  }
+
+  .footer-info-bottom {
+    font-size: 12px;
+    max-width: 240px;
+  }
+}

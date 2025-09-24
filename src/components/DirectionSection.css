@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+
+.direction-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 0;
+}
+
+.direction-img > div {
+  margin: 30px 0;
+}
+.direction-img > div > img {
+  display: block;
+  width: 50%;
+  border: 1px solid rgb(233, 233, 233);
+  margin: auto;
+  border-radius: 10px;
+}
+.direction-img > div > h2 {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 28px;
+  color: rgb(21, 21, 56);
+}
+.direction-title {
+  font-family: "lineseed";
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.direction-title > div > h2 {
+  font-size: 22px;
+}
+
+.direction-title > div > p {
+  font-size: 14px;
+  color: rgb(94, 94, 94);
+}
+
+@media (max-width: 990px) {
+  .direction-img > div > img {
+    width: 85%;
+  }
+
+  .direction-img > div > h2 {
+    font-size: 22px;
+  }
+
+  .direction-title {
+    display: block;
+    width: 85%;
+    text-align: center;
+  }
+  .direction-title > div {
+    margin: 60px 0;
+  }
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+@font-face {
+  font-family: "lineseedBd";
+  src: url("./../assets/LINESeedKR-Bd.woff2");
+}
+.skill-wrap {
+  max-width: 1000px;
+  margin: auto;
+  padding: 120px 40px;
+  font-family: "lineseed";
+}
+.skill-title-first {
+  font-size: 40px;
+  padding: 30px 0;
+  font-family: "lineseedBd";
+}
+.skill-outline {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  gap: 100px;
+}
+
+.skill-wrap > article {
+  margin-bottom: 150px;
+}
+
+.skill-line {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0;
+  background-color: rgb(219, 219, 219);
+}
+
+.skill-outline-content {
+  font-size: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill-outline-imgbox {
+  height: 300px;
+}
+.skill-outline-imgbox img {
+  height: 270px;
+  box-shadow: -20px 20px 5px rgba(63, 0, 211, 0.1);
+}
+
+.skill-character-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+.skill-character-main > div {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 8px rgba(64, 0, 240, 0.3);
+}
+
+.skill-character-main > div > p:nth-child(1) {
+  color: white;
+  background-color: rgb(120, 120, 185);
+  text-align: center;
+  line-height: 29px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.skill-character-main > div > p:nth-child(2) {
+  font-size: 18px;
+}
+
+.skill-expectation-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.skill-expectation-main > div {
+  width: 440px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+@media (max-width: 990px) {
+  .skill-title-first {
+    font-size: 28px;
+  }
+  .skill-outline-content {
+    font-size: 14px;
+  }
+  .skill-outline-imgbox {
+    height: auto;
+  }
+  .skill-outline-imgbox img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    box-shadow: -15px 15px 5px rgba(63, 0, 211, 0.15);
+  }
+  .skill-outline {
+    background-color: rgb(250, 250, 250);
+    display: block;
+    gap: 100px;
+  }
+
+  .skill-character-main {
+    display: block;
+  }
+  .skill-character-main > div {
+    padding: 20px 0;
+    width: 80%;
+    height: 60px;
+    margin: 20px auto;
+    border-radius: 0%;
+  }
+  .skill-character-main > div > p:nth-child(1) {
+    font-size: 12px;
+    line-height: 24px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .skill-character-main > div > p:nth-child(2) {
+    font-size: 14px;
+  }
+  .skill-expectation-main > div {
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+  }
+}

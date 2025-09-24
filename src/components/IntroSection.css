@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+@font-face {
+  font-family: "Nanum gothic";
+  src: url("./../assets/NanumGothic.woff2");
+}
+
+@font-face {
+  font-family: "godo";
+  src: url("./../assets/GodoM.woff2");
+}
+
+.IntroSection {
+  background-image: url("./../assets/page-background.webp");
+  background-size: cover;
+}
+.introsection-wrap {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 200px 40px;
+  align-items: center;
+}
+.intro-content {
+  flex: 1.1;
+}
+.intro-img {
+  padding: 30px;
+  flex: 1;
+}
+
+.intro-img > div > img {
+  width: 100%;
+}
+
+.intro-content-title {
+  font-size: 46px;
+  color: rgb(0, 1, 85);
+  margin: 0;
+  font-family: "lineseed";
+}
+.intro-content-subtitle {
+  font-size: 32px;
+  color: rgb(70, 70, 128);
+  margin: 40px 0;
+  font-family: "godo";
+}
+.intro-content-main {
+  font-size: 18px;
+  color: rgb(42, 51, 61);
+  font-family: "lineseed";
+}
+
+@media (max-width: 990px) {
+  .introsection-wrap {
+    display: block;
+    padding: 130px 40px;
+  }
+
+  .intro-content-title {
+    font-size: 28px;
+  }
+  .intro-content-subtitle {
+    font-size: 22px;
+  }
+  .intro-content-main {
+    font-size: 14px;
+  }
+}

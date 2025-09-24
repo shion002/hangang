@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+.PageTitle > h1 {
+  font-size: 56px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 90px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  font-family: "lineseed";
+}
+
+@media (max-width: 990px) {
+  .PageTitle > h1 {
+    font-size: 34px;
+    padding-top: 200px;
+  }
+}

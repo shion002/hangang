@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "lineseed";
+  src: url("./../assets/LINESeedKR-Rg.woff2");
+}
+@font-face {
+  font-family: "lineseedBd";
+  src: url("./../assets/LINESeedKR-Bd.woff2");
+}
+
+.thirdsection-title-content {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.thirdsection-title-content > h1 {
+  font-size: 44px;
+  font-family: "lineseed";
+}
+.thirdsection-title-content > p {
+  width: 400px;
+  font-size: 20px;
+  margin: auto;
+  font-family: "lineseed";
+  line-height: 30px;
+}
+
+.thirdsection-main-content {
+  margin-top: 50px;
+  background-image: url("./../assets/skill-background.webp");
+  background-size: 100%;
+  background-position: bottom;
+  line-height: 30px;
+}
+.thirdsection-main-wrap {
+  background-color: #203e7aee;
+}
+
+.thirdsection-content-tab {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px 0;
+}
+
+.thirdsection-content-button {
+  display: block;
+  border: none;
+  padding: 20px 0px;
+  width: 150px;
+  text-align: center;
+  color: #ebebeb;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: "lineseedBd";
+  position: relative;
+  background-color: transparent;
+}
+
+.thirdsection-content-button.active {
+  color: rgb(225, 245, 137);
+  background: linear-gradient(
+    to top,
+    transparent 5%,
+    rgba(0, 0, 0, 0.26) 10%,
+    transparent
+  );
+}
+
+.thirdsection-content-button.active .thirdsection-button-line {
+  width: 100%;
+}
+
+.thirdsection-content-button:hover .thirdsection-button-line {
+  width: 100%;
+}
+.thirdsection-button-line {
+  width: 0%;
+  height: 1px;
+  background-color: rgba(225, 245, 137, 0.514);
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: 0.3s;
+}
+
+.thirdsection-content-system {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.thirdsection-content-system.none {
+  display: none;
+}
+
+.thirdsection-content-system-main {
+  flex: 1;
+}
+.thirdsection-content-system-img {
+  flex: 0.7;
+  margin: 20px;
+  align-self: center;
+  border: 1px solid #ffffff49;
+  padding: 30px;
+}
+
+.thirdsection-content-system-img img {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.thirdsection-content-system-main > h1 {
+  font-size: 38px;
+  color: white;
+  font-family: "lineseed";
+}
+.thirdsection-content-line {
+  width: 30px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 35px;
+}
+
+.thirdsection-content-info {
+  background-color: #162647;
+  padding: 10px 25px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: "lineseed";
+}
+.thirdsection-content-info > p {
+  font-size: 20px;
+  margin: 40px 0;
+  color: white;
+}
+
+.thirdsection-info-button {
+  display: block;
+  margin: 50px 0;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #162647;
+  color: white;
+  transition: 0.3s;
+}
+
+.thirdsection-info-button:hover {
+  background-color: #444472;
+}
+
+@media (max-width: 990px) {
+  .thirdsection-title-content > h1 {
+    font-size: 34px;
+  }
+  .thirdsection-title-content > p {
+    font-size: 16px;
+  }
+  .thirdsection-content-tab {
+    display: block;
+    padding: 40px 0;
+  }
+  .thirdsection-content-button {
+    padding: 15px 35px;
+    font-size: 14px;
+    margin: auto;
+    width: 70%;
+  }
+  .thirdsection-button-line {
+    display: none;
+  }
+
+  .thirdsection-content-system-main > h1 {
+    font-size: 28px;
+  }
+  .thirdsection-content-line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .thirdsection-content-system {
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .thirdsection-content-system-main {
+    flex: 0;
+  }
+  .thirdsection-content-system-img {
+    flex: 0;
+    align-self: center;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+  }
+  .thirdsection-mobile-cut {
+    width: 100%;
+  }
+  .thirdsection-content-info > p {
+    font-size: 16px;
+  }
+
+  .thirdsection-info-button {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+}
