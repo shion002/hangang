@@ -3,8 +3,11 @@ import firstImg1 from "./../assets/first-section-image1.webp";
 import firstImg2 from "./../assets/first-section-image2.webp";
 import firstImg3 from "./../assets/first-section-image3.webp";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const FirstSection = () => {
+  const nav = useNavigate();
+
   return (
     <section className="FirstSection">
       <div className="firstsection-wrap">
@@ -58,7 +61,15 @@ const FirstSection = () => {
               technology and has been challenged in an endless way It is a
               company that is advancing with the best competitiveness.
             </p>
-            <button className="firstsection-info-button">더보기</button>
+            <button
+              className="firstsection-info-button"
+              onClick={() => {
+                nav("/intro");
+                window.scrollTo(0, 0);
+              }}
+            >
+              더보기
+            </button>
           </motion.div>
         </article>
       </div>

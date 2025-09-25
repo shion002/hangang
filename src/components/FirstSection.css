@@ -83,6 +83,9 @@
 }
 
 @media (max-width: 990px) {
+  .FirstSection {
+    padding: 80px 0;
+  }
   .firstsection-article {
     display: block;
   }

@@ -102,7 +102,7 @@
     font-size: 28px;
   }
   .skill-outline-content {
-    font-size: 14px;
+    font-size: 16px;
   }
   .skill-outline-imgbox {
     height: auto;
@@ -138,11 +138,11 @@
     border-radius: 50%;
   }
   .skill-character-main > div > p:nth-child(2) {
-    font-size: 14px;
+    font-size: 16px;
   }
   .skill-expectation-main > div {
     width: 90%;
     margin: auto;
-    font-size: 14px;
+    font-size: 16px;
   }
 }

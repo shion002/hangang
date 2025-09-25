@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useNavigate } from "react-router-dom";
 
@@ -38,6 +38,21 @@ const HeaderNav = () => {
     },
   ];
 
+  useEffect(() => {
+    if (window.innerWidth >= 990) {
+      document.body.style.overflow = "";
+      if (isOpen) {
+        defaultClick();
+      }
+    } else {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    }
+  }, [isOpen]);
+
   const menuClick = () => {
     setIsOpen(true);
   };
@@ -54,6 +69,11 @@ const HeaderNav = () => {
     }
   };
 
+  const menuEnter = (url: string) => {
+    nav(url);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className="header-nav-back">
@@ -64,7 +84,7 @@ const HeaderNav = () => {
           <div
             className="header-logo"
             onClick={() => {
-              nav("/");
+              menuEnter("/");
             }}
           ></div>
           <nav className="header-pc-menu">
@@ -75,7 +95,7 @@ const HeaderNav = () => {
                   <div
                     className="header-pc-menu-title"
                     onClick={() => {
-                      nav(menu.url);
+                      menuEnter(menu.url);
                     }}
                   >
                     <div>
@@ -89,7 +109,7 @@ const HeaderNav = () => {
                         <li
                           key={`${menu.key}-${child.key}`}
                           onClick={() => {
-                            nav(`${child.url}`);
+                            menuEnter(child.url);
                           }}
                         >
                           {child.key}
@@ -114,7 +134,7 @@ const HeaderNav = () => {
                 className="header-mobile-menu-title"
                 onClick={() => {
                   if (!hasChildren) {
-                    nav(menu.url);
+                    menuEnter(menu.url);
                   } else {
                     menuTabClick(menu.key);
                   }
@@ -139,7 +159,7 @@ const HeaderNav = () => {
                     <li
                       key={`${menu.key}-${child.key}`}
                       onClick={() => {
-                        nav(child.url);
+                        menuEnter(child.url);
                       }}
                     >
                       {child.key}

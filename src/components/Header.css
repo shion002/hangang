@@ -10,10 +10,6 @@
   font-family: "lineseed";
   src: url("./../assets/LINESeedKR-Rg.woff2");
 }
-@font-face {
-  font-family: "aa";
-  src: url("./../assets//LINESeedKR-Th.woff2;charset=utf-8;base64");
-}
 
 .Header {
   background-size: auto;
@@ -211,7 +207,7 @@
     display: block;
     position: fixed;
     height: 100%;
-    width: 45%;
+    width: 60%;
     background-color: white;
     top: 0;
     left: 0;
@@ -228,12 +224,13 @@
 
   .header-mobile-nav > li {
     border-bottom: 1px solid rgb(238, 238, 238);
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     max-height: 50px;
     transition: 0.3s;
     position: relative;
     font-family: "lineseed";
+    padding: 5px 0;
   }
 
   .header-mobile-nav > li.open {
@@ -242,13 +239,13 @@
   .header-mobile-menu-title {
     padding: 15px 20px;
     cursor: pointer;
-    margin: 0;
   }
 
   .header-mobile-nav-sub {
     padding: 20px 30px;
     background-color: #f7f7f7;
     font-family: "lineseed";
+    margin-top: 20px;
   }
 
   .header-mobile-nav-sub > li {

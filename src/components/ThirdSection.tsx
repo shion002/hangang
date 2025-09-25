@@ -3,9 +3,11 @@ import vqlImg from "./../assets/vql_img.webp";
 import hssImg from "./../assets/hss_img.webp";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const ThirdSection = () => {
   const [systemTab, setSystemTab] = useState("VQL");
+  const nav = useNavigate();
   const skills = [
     {
       key: "VQL",
@@ -14,6 +16,7 @@ const ThirdSection = () => {
       subContent:
         "특징: 불량률 감소, 체계적인 품질 관리, 자동화 기반의 스마트팩토리 대응형 검사 공법",
       img: vqlImg,
+      url: "vql",
     },
     {
       key: "HSS",
@@ -22,6 +25,7 @@ const ThirdSection = () => {
       subContent:
         "특징: 에너지 절감, 자재 절약, 고품질 대량 생산이 가능한 스마트 구조 최적화 공법",
       img: hssImg,
+      url: "hss",
     },
   ];
 
@@ -82,7 +86,15 @@ const ThirdSection = () => {
                   <p>{skill.content}</p>
                   <p>{skill.subContent}</p>
                 </div>
-                <button className="thirdsection-info-button">더보기</button>
+                <button
+                  className="thirdsection-info-button"
+                  onClick={() => {
+                    nav(skill.url);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  더보기
+                </button>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 50 }}

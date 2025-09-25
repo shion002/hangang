@@ -4,8 +4,11 @@ import secImg2 from "./../assets/second-section-image2.webp";
 import secImg3 from "./../assets/second-section-image3.webp";
 import secImg4 from "./../assets/second-section-image4.webp";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const SecondSection = () => {
+  const nav = useNavigate();
+
   return (
     <section className="SecondSection">
       <article className="secondsection-wrap">
@@ -72,6 +75,10 @@ const SecondSection = () => {
           transition={{ duration: 0.4, delay: 0.6 }}
           viewport={{ once: true }}
           className="secondsection-intro-button"
+          onClick={() => {
+            nav("/product");
+            window.scrollTo(0, 0);
+          }}
         >
           더보기
         </motion.button>
