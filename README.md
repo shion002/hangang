@@ -27,6 +27,7 @@
 ### Frontend
 
 - Repository: https://github.com/shion002/hangang
+- url: https://hangangstructure.kr/
 - 기술 스택
   - React
   - TypeScript
